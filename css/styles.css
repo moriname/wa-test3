@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+:active, :hover, :focus {
+    outline: 0;
+}
+
+.rating-star
+{
+	position: relative;
+    float: left;
+	margin:35px 0 0 30px;
+}
+
+.rating-star__group
+{
+    position: relative;
+    float: left;
+}
+
+.rating-star__label
+{
+    position: relative;
+    float: right;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 16px;
+    font-size: 0;
+    cursor: pointer;
+    background: url(../images/stars-sprite.png) no-repeat 0 0 transparent;
+}
+
+.rating-star__label:hover,
+.rating-star__label:hover ~ .rating-star__label
+{
+    background-position: 0 -16px !important;
+}
+
+.rating-star__input:checked + .rating-star__label,
+.rating-star__input:checked + .rating-star__label ~ .rating-star__label 
+{
+    background-position: 0 -16px;
+}
+
+
+.rating-star .rating-star__group:hover .rating-star__label
+{
+    background-position: 0 0;
+}
+
+.rating-star__input
+{
+    float: right;
+    display: none;
+    margin: 16px 0 0 -18px;
+    padding: 0;
+    height: 16px;
+    border: 0 none;
+}
+
+.rating-star__submit
+{
+  	position: relative;
+    float: left;
+    margin: 80px 0 0 0px;
+	border-radius: 9px;
+	border:1px solid #e5e5e5;
+	color:#000000;
+	font:11px/11px Verdana, sans-serif;
+	padding:4px 20px 6px 20px;
+	cursor:pointer;
+	clear: both;
+	background: #e2e2e2;
+	background: -moz-linear-gradient(bottom,  #e2e2e2 30%, #f2f2f2 70%);
+	background: -webkit-linear-gradient(bottom,  #e2e2e2 30%,#f2f2f2 70%);
+	background: linear-gradient(to top,  #e2e2e2 30%,#f2f2f2 70%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2',GradientType=0 );	
+}
+	
+.rating-star__submit:hover
+{
+	background: #e2e2e2;
+	background: -moz-linear-gradient(top,  #e2e2e2 30%, #f2f2f2 70%);
+	background: -webkit-linear-gradient(top,  #e2e2e2 30%,#f2f2f2 70%);
+	background: linear-gradient(to bottom,  #e2e2e2 30%,#f2f2f2 70%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#f2f2f2',GradientType=0 );	
+}
+

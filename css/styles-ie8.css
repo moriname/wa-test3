@@ -1,0 +1,20 @@
+@charset "utf-8";
+.rating-star__input
+{
+    float: right;
+    display: inline;
+    margin: 0 15px 0 0px;
+    height: auto;
+}
+
+.rating-star__label
+{
+    background: none;
+	font:11px/11px Verdana, sans-serif;
+	float: right;	
+}
+
+.rating-star__group
+{	
+	width:300px;
+}
